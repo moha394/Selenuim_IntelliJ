@@ -7,9 +7,10 @@
       <class name="tests.UserRegistration_Test">
         <methods>
           <include name="StopDriver"/>
-          <include name="SuccessfullyRegister"/>
-          <include name="UserLoginSucceffully"/>
+          <include name="SuccessfullyRegister" invocation-numbers="0 1"/>
+          <include name="tearDownClass"/>
           <include name="StartDriver"/>
+          <include name="setUpClass"/>
         </methods>
       </class> <!-- tests.UserRegistration_Test -->
     </classes>

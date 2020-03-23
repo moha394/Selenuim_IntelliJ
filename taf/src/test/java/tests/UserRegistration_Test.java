@@ -18,8 +18,8 @@ public class UserRegistration_Test extends TestBase {
 	@DataProvider(name = "testData")
 	public static Object[][] userData(){
 		return new Object[][] {
-			{"Mohamed","Ahmed","test1moha3@gmail.com","1234560"},
-			{"Mohamed","Ahmed","test2moha3@gmail.com","1234560"}
+			{"Mohamed","Ahmed","test1342111moha3@gmail.com","1234560"},
+			{"Mohamed","Ahmed","test23424222moha3@gmail.com","1234560"}
 		};
 	}
 	
@@ -27,8 +27,8 @@ public class UserRegistration_Test extends TestBase {
 	@DataProvider(name = "testData1")
 	public static Object[][] userData1(){
 		return new Object[][] {
-			{"Mohamed","Ahmed","moha36954@gmail.com","123456"},
-			{"Mohamed","Ahmed","moha363333954@gmail.com","123456"}
+			{"Mohamed","Ahmed","moha1111e232436954@gmail.com","123456"},
+			{"Mohamed","Ahmed","moha322122633424333954@gmail.com","123456"}
 			
 			
 		};
