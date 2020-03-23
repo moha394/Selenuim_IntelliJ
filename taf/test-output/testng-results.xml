@@ -1,119 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="1" total="3" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-03-22T11:25:09 EET" name="Default suite" finished-at="2020-03-22T11:25:33 EET" duration-ms="24165">
+  <suite started-at="2020-03-23T13:06:44 EET" name="Default suite" finished-at="2020-03-23T13:07:07 EET" duration-ms="23084">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@769e7ee8]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2020-03-22T11:25:09 EET" name="Default test" finished-at="2020-03-22T11:25:33 EET" duration-ms="24165">
-      <class name="runner.TestRunner">
-        <test-method is-config="true" signature="StartDriver(java.lang.String)[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2020-03-22T11:24:55 EET" name="StartDriver" finished-at="2020-03-22T11:25:09 EET" duration-ms="13721" status="PASS">
+    <test started-at="2020-03-23T13:06:44 EET" name="Default test" finished-at="2020-03-23T13:07:07 EET" duration-ms="23084">
+      <class name="tests.UserRegistration_Test">
+        <test-method is-config="true" signature="StartDriver(java.lang.String)[pri:0, instance:tests.UserRegistration_Test@15b204a1]" started-at="2020-03-23T13:06:36 EET" name="StartDriver" finished-at="2020-03-23T13:06:44 EET" duration-ms="8845" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[headless]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StartDriver -->
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2020-03-22T11:25:09 EET" name="setUpClass" finished-at="2020-03-22T11:25:09 EET" duration-ms="385" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2020-03-22T11:25:09 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-03-22T11:25:16 EET" duration-ms="7052" status="PASS">
+        <test-method signature="SuccessfullyRegister(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.UserRegistration_Test@15b204a1]" started-at="2020-03-23T13:06:44 EET" name="SuccessfullyRegister" data-provider="testData1" finished-at="2020-03-23T13:06:58 EET" duration-ms="13957" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["User Registration"]]>
+                <![CDATA[Mohamed]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["User Registration"]]>
+                <![CDATA[Ahmed]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[moha1111e232436954@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[123456]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2020-03-22T11:25:16 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-03-22T11:25:21 EET" duration-ms="4672" status="PASS">
+        </test-method> <!-- SuccessfullyRegister -->
+        <test-method signature="SuccessfullyRegister(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.UserRegistration_Test@15b204a1]" started-at="2020-03-23T13:06:58 EET" name="SuccessfullyRegister" data-provider="testData1" finished-at="2020-03-23T13:07:07 EET" duration-ms="9086" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["User Registration"]]>
+                <![CDATA[Mohamed]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["User Registration"]]>
+                <![CDATA[Ahmed]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[moha322122633424333954@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[123456]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2020-03-22T11:25:21 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-03-22T11:25:25 EET" duration-ms="4549" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User Registration"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["User Registration"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2020-03-22T11:25:25 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-03-22T11:25:29 EET" duration-ms="3655" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User Registration"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["User Registration"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2020-03-22T11:25:29 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-03-22T11:25:33 EET" duration-ms="3694" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User Registration"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["User Registration"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2020-03-22T11:25:33 EET" name="tearDownClass" finished-at="2020-03-22T11:25:33 EET" duration-ms="100" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-        <test-method is-config="true" signature="StopDriver()[pri:0, instance:runner.TestRunner@769e7ee8]" started-at="2020-03-22T11:25:33 EET" name="StopDriver" finished-at="2020-03-22T11:25:33 EET" duration-ms="144" status="PASS">
+        </test-method> <!-- SuccessfullyRegister -->
+        <test-method is-config="true" signature="StopDriver()[pri:0, instance:tests.UserRegistration_Test@15b204a1]" started-at="2020-03-23T13:07:08 EET" name="StopDriver" finished-at="2020-03-23T13:07:08 EET" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StopDriver -->
-      </class> <!-- runner.TestRunner -->
+      </class> <!-- tests.UserRegistration_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
