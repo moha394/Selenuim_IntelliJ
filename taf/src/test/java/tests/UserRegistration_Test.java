@@ -27,8 +27,8 @@ public class UserRegistration_Test extends TestBase {
 	@DataProvider(name = "testData1")
 	public static Object[][] userData1(){
 		return new Object[][] {
-			{"Mohamed","Ahmed","moha1111e232436954@gmail.com","123456"},
-			{"Mohamed","Ahmed","moha322122633424333954@gmail.com","123456"}
+			{"Mohamed","Ahmed","moha112211e232436954@gmail.com","123456"},
+			{"Mohamed","Ahmed","moha32212222633424333954@gmail.com","123456"}
 			
 			
 		};

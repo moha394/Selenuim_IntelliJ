@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriverService;
@@ -51,7 +52,19 @@ public class TestBase {
 			
 			driver = new PhantomJSDriver(caps);
 		}
+		
+		//chrome headless
+		else if(browserName.equalsIgnoreCase("chrome-headless")) 
+		{
+			System.setProperty("webdriver.chrome.driver", 
+					System.getProperty("user.dir")+"\\Drivers\\chromedriver.exe");
 
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--headless");
+			options.addArguments("--window-size=1920,1080");
+			driver = new ChromeDriver(options);
+			
+		}
 
 
 		driver.manage().window().maximize();
