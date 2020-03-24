@@ -27,8 +27,8 @@ public class UserRegistration_Test extends TestBase {
 	@DataProvider(name = "testData1")
 	public static Object[][] userData1(){
 		return new Object[][] {
-			{"Mohamed","Ahmed","moha1122111e232436954@gmail.com","123456"},
-			{"Mohamed","Ahmed","moha322122212633424333954@gmail.com","123456"}
+			{"Mohamed","Ahmed","mohaaa436954@gmail.com","123456"},
+			{"Mohamed","Ahmed","mohawww212633424333954@gmail.com","123456"}
 			
 			
 		};
@@ -52,7 +52,8 @@ public class UserRegistration_Test extends TestBase {
 	//Implicit Wait
 
 	
-	
+	Thread.sleep(1000);
+
 	//Test Case _1 Registration
 	RegistrationPageObject.RegistrationFill(fname, lname, email, password, password);
 
@@ -67,7 +68,7 @@ public class UserRegistration_Test extends TestBase {
 
 	//Login TestCase
 	loginObjct= new Login_Page(driver);
-	Thread.sleep(2000);
+	Thread.sleep(1000);
 
 	loginObjct.loginUser(email, password);
 	loginObjct.checkRememberMe();
