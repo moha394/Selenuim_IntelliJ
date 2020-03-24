@@ -25,7 +25,7 @@ public class TestBase {
 
 	@BeforeSuite
 	@Parameters({"browser"})
-	public void StartDriver(@Optional("headless") String browserName) {
+	public void StartDriver(@Optional("chrome") String browserName) {
 
 		if(browserName.equalsIgnoreCase("chrome"))
 		{
