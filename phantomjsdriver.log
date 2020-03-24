@@ -110,3 +110,5 @@ Images":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Win
 [INFO  - 2020-03-24T13:58:00.263Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 78ef8220-6dd7-11ea-8b72-d501fc286bb1
 [ERROR - 2020-03-24T14:00:21.798Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1585058421795
 [INFO  - 2020-03-24T14:03:00.010Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-03-24T14:08:00.017Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-03-24T14:13:00.017Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
