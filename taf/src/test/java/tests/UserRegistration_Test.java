@@ -27,8 +27,8 @@ public class UserRegistration_Test extends TestBase {
 	@DataProvider(name = "testData1")
 	public static Object[][] userData1(){
 		return new Object[][] {
-			{"Mohamed","Ahmed","moha112211e232436954@gmail.com","123456"},
-			{"Mohamed","Ahmed","moha32212222633424333954@gmail.com","123456"}
+			{"Mohamed","Ahmed","mohaeee11@gmail.com","123456"},
+			{"Mohamed","Ahmed","mohaeere11e@gmail.com","123456"}
 			
 			
 		};
@@ -40,7 +40,9 @@ public class UserRegistration_Test extends TestBase {
 	
 	@Test(dataProvider = "testData1")
 	public void SuccessfullyRegister(String fname , String lname , String email , String password) throws InterruptedException {
-	
+		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+	//Thread.sleep(1000);	
+		
 	homeObject = new Home_Page(driver);
 	homeObject.OpenRegistrationPage();
 	
@@ -48,15 +50,14 @@ public class UserRegistration_Test extends TestBase {
 	RegistrationPageObject = new UserRegistration_Page(driver);
 	
 	
-	//Implicit Wait
-	driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+	 
 
 	
 	
 	//Test Case _1 Registration
 	RegistrationPageObject.RegistrationFill(fname, lname, email, password, password);
 
-	RegistrationPageObject.ReturnResult("Your registration completed");
+	//RegistrationPageObject.ReturnResult("Your registration completed");
 	
 
 	homeObject = new Home_Page(driver);
@@ -67,12 +68,12 @@ public class UserRegistration_Test extends TestBase {
 
 	//Login TestCase
 	loginObjct= new Login_Page(driver);
-	Thread.sleep(2000);
+	Thread.sleep(1000);
 
 	loginObjct.loginUser(email, password);
 	loginObjct.checkRememberMe();
 	loginObjct.PressLoginButton();
-	loginObjct.ReturnResult("My account");
+	//loginObjct.ReturnResult("My account");
 
 	homeObject.UserLogout();
 
