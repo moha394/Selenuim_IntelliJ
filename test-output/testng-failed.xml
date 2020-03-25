@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [NopCommerce Regression Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="browser" value="chrome-headless"/>
-  <test thread-count="5" name="Registration Test(failed)">
+<suite thread-count="2" parallel="tests" name="Failed suite [NopCommerce Regression Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="FireFox Registration Test(failed)">
+    <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="tests.UserRegistration_Test">
+      <class name="tests.UserRegistrationParallelTesting2">
         <methods>
-          <include name="StopDriver"/>
-          <include name="SuccessfullyRegister"/>
-          <include name="StartDriver"/>
+          <include name="SuccessfullyRegister" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="stop"/>
+          <include name="screemshots"/>
         </methods>
-      </class> <!-- tests.UserRegistration_Test -->
+      </class> <!-- tests.UserRegistrationParallelTesting2 -->
     </classes>
-  </test> <!-- Registration Test(failed) -->
+  </test> <!-- FireFox Registration Test(failed) -->
 </suite> <!-- Failed suite [NopCommerce Regression Suite] -->
