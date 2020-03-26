@@ -2,6 +2,9 @@ package tests;
 
 import java.util.concurrent.TimeUnit;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -18,8 +21,8 @@ public class UserRegistration_Test extends TestBase {
 	@DataProvider(name = "testData")
 	public static Object[][] userData(){
 		return new Object[][] {
-			{"Mohamed","Ahmed","test1342111moha3@gmail.com","1234560"},
-			{"Mohamed","Ahmed","test23424222moha3@gmail.com","1234560"}
+			{"Mohamed","Ahmed","testaa13qw222242111moha3@gmail.com","1234560"},
+			{"Mohamed","Ahmed","testaa23422qqq22224222moha3@gmail.com","1234560"}
 		};
 	}
 	
@@ -27,8 +30,8 @@ public class UserRegistration_Test extends TestBase {
 	@DataProvider(name = "testData1")
 	public static Object[][] userData1(){
 		return new Object[][] {
-			{"Mohamed","Ahmed","moh1aaa224@gmail.com","123456"},
-			{"Mohamed","Ahmed","moh11rtaaaa223954@gmail.com","123456"}
+			{"Mohamed","Ahmed","moh11fffad11a1qqqqa224@gmail.com","123456"},
+			{"Mohamed","Ahmed","moh111afffsasd1asdasr111qqteeaa223954@gmail.com","123456"}
 			
 			
 		};
@@ -39,6 +42,8 @@ public class UserRegistration_Test extends TestBase {
 	
 	
 	@Test(dataProvider = "testData1")
+	@Severity(SeverityLevel.CRITICAL)
+	@Description("SignUp Testcase")
 	public void SuccessfullyRegister(String fname , String lname , String email , String password) throws InterruptedException {
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 

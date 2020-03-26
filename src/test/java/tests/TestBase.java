@@ -2,6 +2,7 @@ package tests;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -21,7 +22,6 @@ public class TestBase {
 	//For Initialize the Driver
 
 	public static WebDriver driver;
-
 
 	@BeforeSuite
 	@Parameters({"browser"})
@@ -80,7 +80,12 @@ public class TestBase {
 
 
 	@AfterSuite
-	public void StopDriver() {driver.close();}
+	public void StopDriver() throws InterruptedException {
+		JavascriptExecutor JS = (JavascriptExecutor) driver;
+		JS.executeScript("alert('Test Completed and will close after 3 seconds')");
+		Thread.sleep(3000);
+		driver.quit();
+	}
 
 
 
