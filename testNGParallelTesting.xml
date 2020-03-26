@@ -2,7 +2,7 @@
 <suite  name="NopCommerce Regression Suite" parallel="tests" thread-count="2">
   
   <test name="FireFox Registration Test">
-    	<parameter name="browser" value="firefox" />
+    	<parameter name="browser" value="chrome" />
     
 	    <classes>
 	      <class name="tests.UserRegistrationParallelTesting"/>
