@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-03-25T14:02:19 EET" name="NopCommerce Regression Suite" finished-at="2020-03-25T14:02:38 EET" duration-ms="19758">
+  <suite started-at="2020-03-26T02:51:12 EET" name="NopCommerce Regression Suite" finished-at="2020-03-26T02:51:47 EET" duration-ms="35215">
     <groups>
     </groups>
-    <test started-at="2020-03-25T14:02:19 EET" name="FireFox Registration Test" finished-at="2020-03-25T14:02:38 EET" duration-ms="19758">
-      <class name="tests.UserRegistrationParallelTesting2">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.UserRegistrationParallelTesting2@2ddc8ecb]" started-at="2020-03-25T14:02:19 EET" name="setUp" finished-at="2020-03-25T14:02:31 EET" duration-ms="12740" status="PASS">
+    <test started-at="2020-03-26T02:51:12 EET" name="FireFox Registration Test" finished-at="2020-03-26T02:51:47 EET" duration-ms="35215">
+      <class name="tests.UserRegistrationParallelTesting">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.UserRegistrationParallelTesting@229d10bd]" started-at="2020-03-26T02:51:12 EET" name="setUp" finished-at="2020-03-26T02:51:34 EET" duration-ms="21470" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="SuccessfullyRegister(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.UserRegistrationParallelTesting2@2ddc8ecb]" started-at="2020-03-25T14:02:31 EET" name="SuccessfullyRegister" data-provider="testData1" finished-at="2020-03-25T14:02:37 EET" duration-ms="5234" status="FAIL">
+        <test-method signature="SuccessfullyRegister(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.UserRegistrationParallelTesting@229d10bd]" started-at="2020-03-26T02:51:34 EET" name="SuccessfullyRegister" data-provider="testData1" finished-at="2020-03-26T02:51:43 EET" duration-ms="9756" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -32,7 +32,7 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[moh111994@gmail.com]]>
+                <![CDATA[moh111e11r224@gmail.com]]>
               </value>
             </param>
             <param index="3">
@@ -41,91 +41,25 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: Log out
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-66DS3TN', ip: '192.168.1.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 74.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200309095159, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 16820, moz:profile: C:\Users\moha2\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 73cd47fd-d5ff-4680-8111-c1e...}
-Session ID: 73cd47fd-d5ff-4680-8111-c1e6c5d651b0
-*** Element info: {Using=link text, value=Log out}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: Log out
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-66DS3TN', ip: '192.168.1.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 74.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200309095159, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 16820, moz:profile: C:\Users\moha2\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 73cd47fd-d5ff-4680-8111-c1e...}
-Session ID: 73cd47fd-d5ff-4680-8111-c1e6c5d651b0
-*** Element info: {Using=link text, value=Log out}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
-at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy16.click(Unknown Source)
-at pages.PageBase.clickButton(PageBase.java:22)
-at pages.Home_Page.UserLogout(Home_Page.java:35)
-at tests.UserRegistrationParallelTesting2.SuccessfullyRegister(UserRegistrationParallelTesting2.java:46)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:830)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SuccessfullyRegister -->
-        <test-method is-config="true" signature="screemshots(org.testng.ITestResult)[pri:0, instance:tests.UserRegistrationParallelTesting2@2ddc8ecb]" started-at="2020-03-25T14:02:37 EET" name="screemshots" finished-at="2020-03-25T14:02:37 EET" duration-ms="276" status="PASS">
+        <test-method is-config="true" signature="screemshots(org.testng.ITestResult)[pri:0, instance:tests.UserRegistrationParallelTesting@229d10bd]" started-at="2020-03-26T02:51:43 EET" name="screemshots" finished-at="2020-03-26T02:51:43 EET" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=SuccessfullyRegister status=FAILURE method=UserRegistrationParallelTesting2.SuccessfullyRegister(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.UserRegistrationParallelTesting2@2ddc8ecb] output={null}]]]>
+                <![CDATA[[TestResult name=SuccessfullyRegister status=SUCCESS method=UserRegistrationParallelTesting.SuccessfullyRegister(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.UserRegistrationParallelTesting@229d10bd] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screemshots -->
-        <test-method is-config="true" signature="stop()[pri:0, instance:tests.UserRegistrationParallelTesting2@2ddc8ecb]" started-at="2020-03-25T14:02:37 EET" name="stop" finished-at="2020-03-25T14:02:38 EET" duration-ms="1442" status="PASS">
+        <test-method is-config="true" signature="stop()[pri:0, instance:tests.UserRegistrationParallelTesting@229d10bd]" started-at="2020-03-26T02:51:43 EET" name="stop" finished-at="2020-03-26T02:51:47 EET" duration-ms="3935" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stop -->
-      </class> <!-- tests.UserRegistrationParallelTesting2 -->
+      </class> <!-- tests.UserRegistrationParallelTesting -->
     </test> <!-- FireFox Registration Test -->
   </suite> <!-- NopCommerce Regression Suite -->
 </testng-results>

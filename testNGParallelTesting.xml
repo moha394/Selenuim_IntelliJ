@@ -5,17 +5,17 @@
     	<parameter name="browser" value="firefox" />
     
 	    <classes>
-	      <class name="tests.UserRegistrationParallelTesting2"/>
+	      <class name="tests.UserRegistrationParallelTesting"/>
 	    </classes>
 	 </test> <!-- Test -->
   
   
   
   <test name="Chrome Registration Test">
-  	<parameter name="browser" value="chrome" />
+  	<parameter name="browser" value="firefox" />
   
     <classes>
-      <class name="tests.UserRegistrationParallelTesting"/>
+      <class name="tests.UserRegistrationParallelTesting2"/>
     </classes>
   </test> <!-- Test -->
   

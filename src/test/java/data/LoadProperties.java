@@ -11,6 +11,8 @@ public class LoadProperties {
 	
 public static Properties userData = loadProperties("C:\\Users\\moha2\\Desktop\\Selenuim Course\\Selenuim Course\\Projects\\taf\\src\\main\\java\\properties\\userdata.properties");
 
+//
+public static Properties SuaceLabuserData = loadProperties("C:\\Users\\moha2\\Desktop\\SelenuimCopy\\taf\\src\\main\\java\\properties\\SauceLabsProp.properties");
 
 private static Properties loadProperties(String path) {
 	Properties pro = new Properties();
